@@ -10,6 +10,14 @@
 - Low ego, high trust, radical transparency
 - User-focused, independent execution
 
+![Tiny Team](./images/tiny_team_concept.png)
+
+#### Characterstics of a Generalist
+![Generalist](./images//generalist.png)
+
+#### Lead by a Player-Coach
+![Player-Coach](./images/player-coadh.png)
+
 ## Operational Playbook
 
 ### Hiring
