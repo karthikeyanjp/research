@@ -1,0 +1,4 @@
+interface:
+  display_name: "Graphviz"
+  short_description: "Generate clean Graphviz diagram systems"
+  default_prompt: "Apply the Graphviz skill with codewiki-style defaults: concise nodes, rounded boxes, and readable edge labels."

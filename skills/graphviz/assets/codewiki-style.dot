@@ -1,0 +1,59 @@
+digraph CodeWikiStyle {
+  rankdir=LR;
+
+  graph [
+    label="",
+    bgcolor="#303030",
+    fontname="Courier New",
+    fontsize=12,
+    nodesep=0.9,
+    ranksep=0.85,
+    center=true,
+    splines=ortho,
+    remincross=true,
+    ordering=out,
+    color="#64748b",
+    penwidth=1,
+    margin="0.3",
+    concentrate=false,
+    pad="0.2",
+    outputorder="edgesfirst"
+  ];
+
+  node [
+    fontname="Courier New",
+    fontsize=11,
+    style="rounded",
+    fillcolor="transparent",
+    color="#9ca3af",
+    fontcolor="#e5e7eb",
+    penwidth=1.2,
+    margin="0.18,0.12",
+    height=0.45
+  ];
+
+  edge [
+    fontname="Courier New",
+    fontsize=9,
+    color="#cbd5e1",
+    fontcolor="#e2e8f0",
+    penwidth=1,
+    dir="forward",
+    arrowhead=normal,
+    arrowsize=0.8
+  ];
+
+  subgraph cluster_boundary {
+    label="System";
+    style="rounded";
+    color="#64748b";
+    fillcolor="transparent";
+    bgcolor="transparent";
+    "Client" [shape=oval, fillcolor="transparent", color="#94a3b8"];
+    "Gateway" [shape=box, fillcolor="transparent", color="#60a5fa"];
+    "Database" [shape=cylinder, fillcolor="transparent", color="#34d399"];
+  }
+
+  "Client" -> "Gateway" [label="request"];
+  "Gateway" -> "Database" [label="read/write"];
+}
